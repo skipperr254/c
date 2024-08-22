@@ -5,7 +5,7 @@ int main()
 	int first = 1;
 	int val, maxval, minval;
 
-	while (scanf("%d", &val) != EOF)
+	while (scanf("%d", &val) == 1)
 	{
 		if (first || val < minval)
 			minval = val;
