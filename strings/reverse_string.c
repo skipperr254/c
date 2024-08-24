@@ -7,20 +7,25 @@
 #include <stdio.h>
 
 int main() {
-	int length();
-	char str[] = "Hello world";
-	
-	char newString[length(str)];
-	
-	int i = length(str) - 1;
-	int j = 0;
+	while (1) {
+		int length();
+		char str[100];
 
-	for (i; i >= 0; i--) {
-		newString[j] = str[i];
-		j++;
+		if (scanf("%[^\n]s", str) != 1) break;
+		
+		char newString[length(str)];
+	
+		int i = length(str) - 1;
+		int j = 0;
+
+		for (i; i >= 0; i--) {
+			newString[j] = str[i];
+			j++;
+		}
+		newString[length(str)] = '\0';
+		printf("%s in reverse is %s", str, newString);
+
 	}
-	newString[length(str)] = '\0';
-	printf("%s in reverse is %s", str, newString);
 }
 
 int length(str)
