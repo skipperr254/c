@@ -8,6 +8,9 @@ int main() {
 
 	void compare();
 	compare();
+
+	void unary();
+	unary();
 }
 
 void area() {
@@ -45,5 +48,21 @@ void compare() {
 	} else {
 		printf("You are on the same page as you competitor\n");
 	}
-}	
-		
+}
+
+
+void study() {
+	/*
+	 * A program to check if you have both a chair and a table in order to study otherwise just sleep
+	 */
+
+	printf("-------Logical Operators (To study or to sleep)---------");
+}
+
+void unary() {
+	int a = 1;
+	int b = 1;
+
+	printf("Pre-increment: %d\n", ++a);
+	printf("Post-increment: %d\n", b++);
+}
